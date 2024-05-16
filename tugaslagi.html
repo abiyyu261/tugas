@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <input type="number" id="x">
+        <br>
+        <input type="number" id="y">
+        <br>
+        <button onclick="kalkulator()">liat jawaban kali</button>
+        <h1 id="kalkulator">jawaban</h1>
+        <button onclick="kalkulator2()">liat jawaban bagi</button>
+        <h1 id="kalkulator2">jawaban</h1>
+        <button onclick="kalkulator3()">liat jawaban tambah</button>
+        <h1 id="kalkulator3">jawaban</h1>
+        <button onclick="kalkulator4()">liat jawaban kurang</button>
+        <h1 id="kalkulator4">jawaban</h1>
+    </p>
+    <script>
+        function penjumlahan(x, y){
+            document.getElementById("jawaban").innerHTML = x * y
+        }
+
+        function kalkulator(){
+            var x = document.getElementById("x").value
+            var y = document.getElementById("y").value
+            document.getElementById("kalkulator").innerHTML = x * y
+        }
+        function kalkulator2(){
+            var x = document.getElementById("x").value
+            var y = document.getElementById("y").value
+            document.getElementById("kalkulator2").innerHTML = x / y
+        }
+        function kalkulator3(){
+            var x = document.getElementById("x").value
+            var y = document.getElementById("y").value
+            document.getElementById("kalkulator3").innerHTML = x + y
+        }
+        function kalkulator4(){
+            var x = document.getElementById("x").value
+            var y = document.getElementById("y").value
+            document.getElementById("kalkulator4").innerHTML = x - y
+        }
+    </script>
+</body>
+</html>
